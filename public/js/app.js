@@ -11,7 +11,7 @@ weatherForm.addEventListener('submit', (e) => {
   const windSpeed = document.querySelector('#windspeed');
   const location = document.querySelector('#location').value;
 
-  fetch('http://localhost:3000/weather?address=' + location)
+  fetch('https://weather-whizzz.onrender.com/weather?address=' + location)
     .then((response) => {
       response.json().then((data) => {
         if (data.message) {
