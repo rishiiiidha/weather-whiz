@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather</title>
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="shortcut icon" href="img/clouds.png" type="image/x-icon">
+</head>
+<body>
+  <div class="main-content">
+    {{>header}}
+    <p>{{place}}</p> <!-- Added the missing closing angle bracket -->
+    <form>
+      <input type="text" placeholder="Location" id="location" autoComplete="off">
+      <input type="submit" value="Search">
+    </form>
+    <p id="error"></p> <!-- Removed extra space inside p tag -->
+    <p id="place"></p>
+    <p id="temp"></p>
+    <p id="windspeed"></p>
+    <p id="fore"></p>
+  </div>
+  {{>footer}}
+  <script src="/js/app.js"></script>
+</body>
+</html>
